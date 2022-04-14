@@ -3,7 +3,7 @@ class Review < ActiveRecord::Base
     belongs_to :restaurant
 
     def full_review 
-        puts "Review for #{self.restaurant.name} by #{self.customer.full_name}: #{self.star_rating} stars."
-        end
+        "Review for #{self.restaurant.name} by #{self.customer.full_name}: #{self.star_rating} stars."
     end
+end
 
