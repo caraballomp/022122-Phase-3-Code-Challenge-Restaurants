@@ -13,11 +13,6 @@ class Customer < ActiveRecord::Base
     end
 
     def add_review(restaurant, rating)
-        Review.create (
-            star_rating: rating, 
-            restaurant_id: restaurant.id, 
-            customer_id: self.id ) 
-    end
 
     def delete_review(restaurant)
 
